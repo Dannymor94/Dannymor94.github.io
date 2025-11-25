@@ -13,7 +13,6 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Морозов Даниил — Project Manager / Business Analyst">
     <meta property="og:description" content="Управление проектами, организация процессов, аналитика данных. Резюме для позиции Project Manager.">
-    <!-- Заменишь на свой реальный скрин/картинку резюме -->
     <meta property="og:image" content="https://Dannymor94.github.io/preview.png">
     <meta property="og:url" content="https://Dannymor94.github.io">
 
@@ -23,7 +22,7 @@
     <meta name="twitter:description" content="Управление проектами, организация процессов, аналитика данных. Резюме.">
     <meta name="twitter:image" content="https://Dannymor94.github.io/preview.png">
 
-    <!-- Favicon (простая иконка в виде кружка, можно заменить на свою) -->
+    <!-- Favicon (можно заменить на свой файл позже) -->
     <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="%235c6bc0"/><text x="50" y="57" font-size="40" text-anchor="middle" fill="white" font-family="Arial">D</text></svg>'>
 
     <style>
@@ -123,10 +122,42 @@
             box-shadow: var(--shadow-hover);
         }
 
-        /* --- HEADER & HERO --- */
+        /* --- HERO & PARALLAX --- */
+        .hero-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: radial-gradient(circle at top left, #dbe2ff 0, transparent 55%),
+                        radial-gradient(circle at top right, #ffe8d6 0, transparent 55%),
+                        linear-gradient(180deg, #f6f7fb 0, transparent 60%);
+        }
+        [data-theme="dark"] .hero-wrapper {
+            background: radial-gradient(circle at top left, #1b2140 0, transparent 55%),
+                        radial-gradient(circle at top right, #40263a 0, transparent 55%),
+                        linear-gradient(180deg, #050814 0, transparent 60%);
+        }
+
+        .hero-parallax {
+            position: absolute;
+            inset: -80px;
+            pointer-events: none;
+            opacity: 0.4;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(255,255,255,0.9) 0, transparent 55%),
+                radial-gradient(circle at 80% 10%, rgba(92,107,192,0.2) 0, transparent 50%);
+            transform: translateY(0);
+            transition: transform 0.2s linear;
+        }
+        [data-theme="dark"] .hero-parallax {
+            background:
+                radial-gradient(circle at 20% 20%, rgba(142,162,255,0.18) 0, transparent 55%),
+                radial-gradient(circle at 80% 10%, rgba(255,255,255,0.05) 0, transparent 50%);
+        }
+
         header {
+            position: relative;
             padding: 60px 0 40px;
             text-align: center;
+            z-index: 1;
         }
 
         .hero-photo {
@@ -525,6 +556,17 @@
             color: var(--accent-color);
         }
 
+        /* --- REVEAL ANIMATION --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
             .hero-name {
@@ -578,18 +620,22 @@
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <header class="container">
-        <!-- Заменишь src на свою реальную фотографию -->
-        <img src="https://placehold.co/400x400/eef2ff/5c6bc0?text=Photo" alt="Фото: Морозов Даниил" class="hero-photo" width="160" height="160">
-        <h1 class="hero-name">Морозов Даниил Александрович</h1>
-        <div class="hero-role">Project Manager / Business Analyst</div>
-        <p class="hero-tagline">Управление проектами, организация процессов, аналитика данных</p>
-    </header>
+    <div class="hero-wrapper">
+        <div class="hero-parallax" id="heroParallax"></div>
+
+        <!-- HERO SECTION -->
+        <header class="container reveal">
+            <!-- Заменишь src на свою реальную фотографию -->
+            <img src="https://placehold.co/400x400/eef2ff/5c6bc0?text=Photo" alt="Фото: Морозов Даниил" class="hero-photo" width="160" height="160">
+            <h1 class="hero-name">Морозов Даниил Александрович</h1>
+            <div class="hero-role">Project Manager / Business Analyst</div>
+            <p class="hero-tagline">Управление проектами, организация процессов, аналитика данных</p>
+        </header>
+    </div>
 
     <!-- NAVIGATION -->
     <nav class="sticky-nav">
-        <div class="nav-inner">
+        <div class="nav-inner reveal">
             <a href="#about" class="nav-link">Обо мне</a>
             <a href="#skills" class="nav-link">Навыки</a>
             <a href="#experience" class="nav-link">Опыт</a>
@@ -608,7 +654,7 @@
     <main class="container">
 
         <!-- ABOUT ME -->
-        <section id="about">
+        <section id="about" class="reveal">
             <div class="card">
                 <h2 class="section-title">Обо мне</h2>
                 <div class="about-text">
@@ -620,7 +666,7 @@
         </section>
 
         <!-- SKILLS -->
-        <section id="skills">
+        <section id="skills" class="reveal">
             <h2 class="section-title">Навыки</h2>
             <div class="skills-grid">
 
@@ -699,7 +745,7 @@
         </section>
 
         <!-- EXPERIENCE -->
-        <section id="experience">
+        <section id="experience" class="reveal">
             <h2 class="section-title">Опыт работы</h2>
 
             <div class="timeline-item">
@@ -800,7 +846,7 @@
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects">
+        <section id="projects" class="reveal">
             <h2 class="section-title">Проекты</h2>
             <div class="card project-card">
                 <h3>Проект "Системная Йога"</h3>
@@ -815,7 +861,7 @@
         </section>
 
         <!-- EDUCATION -->
-        <section id="education">
+        <section id="education" class="reveal">
             <h2 class="section-title">Образование и курсы</h2>
             <div class="card">
                 <ul class="edu-list">
@@ -852,7 +898,7 @@
         </section>
 
         <!-- GALLERY -->
-        <section id="gallery">
+        <section id="gallery" class="reveal">
             <h2 class="section-title">Галерея</h2>
             <div class="gallery-grid">
                 <!-- Item 1 -->
@@ -893,7 +939,7 @@
     </main>
 
     <!-- CONTACTS FOOTER -->
-    <footer id="contacts">
+    <footer id="contacts" class="reveal">
         <div class="container">
             <div class="contact-grid">
 
@@ -925,7 +971,7 @@
         </div>
     </footer>
 
-    <!-- THEME TOGGLE SCRIPT -->
+    <!-- SCRIPTS: THEME, PARALLAX, REVEAL -->
     <script>
         (function () {
             const root = document.documentElement;
@@ -957,6 +1003,39 @@
                     label.textContent = 'Тёмная';
                 }
             }
+        })();
+
+        // Parallax для верхнего градиента
+        (function () {
+            const layer = document.getElementById('heroParallax');
+            if (!layer) return;
+
+            window.addEventListener('scroll', () => {
+                const offset = window.scrollY * 0.15;
+                layer.style.transform = 'translateY(' + offset * -1 + 'px)';
+            });
+        })();
+
+        // Reveal-анимация для секций
+        (function () {
+            const elements = document.querySelectorAll('.reveal');
+            if (!('IntersectionObserver' in window)) {
+                elements.forEach(el => el.classList.add('visible'));
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.15
+            });
+
+            elements.forEach(el => observer.observe(el));
         })();
     </script>
 
