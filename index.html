@@ -7,38 +7,38 @@
     <title>Морозов Даниил — Project Manager / Business Analyst</title>
 
     <!-- SEO -->
-    <meta name="description" content="Project Manager / Business Analyst. Управление проектами, процессы, аналитика данных. Резюме Морозова Даниила Александровича.">
-    <meta name="keywords" content="Project Manager, Business Analyst, менеджер проектов, бизнес-аналитик, Power BI, управление проектами, Морозов Даниил">
+    <meta name="description" content="Project Manager / Business Analyst. Управление проектами, процессы, аналитика данных. Веб-резюме Морозова Даниила Александровича.">
+    <meta name="keywords" content="Project Manager, Business Analyst, менеджер проектов, бизнес-аналитик, Power BI, управление проектами, Морозов Даниил, agile, scrum">
 
-    <!-- Эти URL подправь под свой домен/картинку -->
-    <link rel="canonical" href="https://your-domain.github.io/">
+    <!-- Подставь реальные URL для своего домена и картинки превью -->
+    <link rel="canonical" href="https://dannymor94.github.io/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Морозов Даниил — Project Manager / Business Analyst">
     <meta property="og:description" content="Управление проектами, процессы, аналитика данных. Веб-резюме для позиции Project Manager / Business Analyst.">
-    <meta property="og:image" content="https://your-domain.github.io/preview.png">
-    <meta property="og:url" content="https://your-domain.github.io/">
+    <meta property="og:image" content="https://dannymor94.github.io/preview.png">
+    <meta property="og:url" content="https://dannymor94.github.io/">
     <meta property="og:locale" content="ru_RU">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Морозов Даниил — Project Manager / Business Analyst">
     <meta name="twitter:description" content="Управление проектами, процессы, аналитика данных.">
-    <meta name="twitter:image" content="https://your-domain.github.io/preview.png">
+    <meta name="twitter:image" content="https://dannymor94.github.io/preview.png">
 
-    <!-- Favicon (можно заменить на свой файл позже) -->
-    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="%235c6bc0"/><text x="50" y="57" font-size="40" text-anchor="middle" fill="white" font-family="Arial">D</text></svg>'>
+    <!-- Простой favicon (можно заменить на файл later) -->
+    <link rel="icon" type="image/svg+xml"
+          href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="%235c6bc0"/><text x="50" y="57" font-size="40" text-anchor="middle" fill="white" font-family="Arial">D</text></svg>'>
 
     <style>
-        /* --- CSS VARIABLES & RESET --- */
         :root {
-            /* light theme */
+            /* светлая тема */
             --bg-color: #f3f5f9;
             --card-bg: #ffffff;
             --text-main: #343a40;
             --text-secondary: #6c757d;
-            --accent-color: #5c6bc0; /* Soft Indigo */
+            --accent-color: #5c6bc0;
             --accent-hover: #3f51b5;
             --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.04);
             --shadow-hover: 0 12px 30px rgba(92, 107, 192, 0.12);
@@ -46,7 +46,7 @@
             --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
-        /* dark theme overrides */
+        /* тёмная тема */
         [data-theme="dark"] {
             --bg-color: #050814;
             --card-bg: #101524;
@@ -58,15 +58,9 @@
             --shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.95);
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -83,9 +77,7 @@
             padding: 0 20px;
         }
 
-        section {
-            margin-bottom: 60px;
-        }
+        section { margin-bottom: 60px; }
 
         h1, h2, h3, h4 {
             font-weight: 700;
@@ -93,13 +85,8 @@
             color: var(--text-main);
         }
 
-        p {
-            margin-bottom: 1rem;
-            color: #495057;
-        }
-        [data-theme="dark"] p {
-            color: #ced4da;
-        }
+        p { margin-bottom: 1rem; color: #495057; }
+        [data-theme="dark"] p { color: #ced4da; }
 
         a {
             text-decoration: none;
@@ -107,17 +94,15 @@
             transition: var(--transition);
         }
 
-        ul {
-            list-style: none;
-        }
+        ul { list-style: none; }
 
         .card {
             background: var(--card-bg);
             border-radius: var(--radius);
             padding: 30px;
             box-shadow: var(--shadow-soft);
-            transition: var(--transition);
             border: 1px solid rgba(255,255,255,0.08);
+            transition: var(--transition);
         }
 
         .card:hover {
@@ -125,18 +110,20 @@
             box-shadow: var(--shadow-hover);
         }
 
-        /* HERO & PARALLAX */
+        /* HERO + фон */
         .hero-wrapper {
             position: relative;
             overflow: hidden;
-            background: radial-gradient(circle at top left, #dbe2ff 0, transparent 55%),
-                        radial-gradient(circle at top right, #ffe8d6 0, transparent 55%),
-                        linear-gradient(180deg, #f6f7fb 0, transparent 60%);
+            background:
+                radial-gradient(circle at top left, #dbe2ff 0, transparent 55%),
+                radial-gradient(circle at top right, #ffe8d6 0, transparent 55%),
+                linear-gradient(180deg, #f6f7fb 0, transparent 60%);
         }
         [data-theme="dark"] .hero-wrapper {
-            background: radial-gradient(circle at top left, #1b2140 0, transparent 55%),
-                        radial-gradient(circle at top right, #40263a 0, transparent 55%),
-                        linear-gradient(180deg, #050814 0, transparent 60%);
+            background:
+                radial-gradient(circle at top left, #1b2140 0, transparent 55%),
+                radial-gradient(circle at top right, #40263a 0, transparent 55%),
+                linear-gradient(180deg, #050814 0, transparent 60%);
         }
 
         .hero-parallax {
@@ -169,17 +156,12 @@
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
-            border: 5px solid white;
+            border: 5px solid #fff;
             box-shadow: var(--shadow-soft);
             background-color: #eef2ff;
         }
 
-        .hero-name {
-            font-size: 2.5rem;
-            margin-bottom: 8px;
-            letter-spacing: -0.5px;
-        }
-
+        .hero-name { font-size: 2.5rem; margin-bottom: 8px; letter-spacing: -0.5px; }
         .hero-role {
             font-size: 1.2rem;
             color: var(--accent-color);
@@ -188,7 +170,6 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-
         .hero-tagline {
             font-size: 1rem;
             color: var(--text-secondary);
@@ -196,7 +177,7 @@
             margin: 0 auto;
         }
 
-        /* NAVIGATION */
+        /* NAV */
         .sticky-nav {
             position: sticky;
             top: 0;
@@ -232,9 +213,7 @@
             position: relative;
         }
 
-        .nav-link:hover {
-            color: var(--accent-color);
-        }
+        .nav-link:hover { color: var(--accent-color); }
 
         .nav-link::after {
             content: '';
@@ -247,9 +226,7 @@
             transition: var(--transition);
         }
 
-        .nav-link:hover::after {
-            width: 100%;
-        }
+        .nav-link:hover::after { width: 100%; }
 
         .theme-toggle {
             border: none;
@@ -264,19 +241,13 @@
             color: var(--text-secondary);
             transition: var(--transition);
         }
-        .theme-toggle span {
-            font-size: 1.1rem;
-        }
+        .theme-toggle span { font-size: 1.1rem; }
         .theme-toggle:hover {
             background: rgba(0,0,0,0.08);
             color: var(--accent-color);
         }
-        [data-theme="dark"] .theme-toggle {
-            background: rgba(255,255,255,0.04);
-        }
-        [data-theme="dark"] .theme-toggle:hover {
-            background: rgba(255,255,255,0.08);
-        }
+        [data-theme="dark"] .theme-toggle { background: rgba(255,255,255,0.04); }
+        [data-theme="dark"] .theme-toggle:hover { background: rgba(255,255,255,0.08); }
 
         /* SECTIONS */
         .section-title {
@@ -286,7 +257,6 @@
             display: inline-block;
             padding-right: 20px;
         }
-
         .section-title::after {
             content: '';
             position: absolute;
@@ -299,9 +269,7 @@
             opacity: 0.7;
         }
 
-        .about-text {
-            font-size: 1.02rem;
-        }
+        .about-text { font-size: 1.02rem; }
 
         /* SKILLS */
         .skills-grid {
@@ -310,9 +278,7 @@
             gap: 26px;
         }
 
-        .skill-group {
-            margin-bottom: 20px;
-        }
+        .skill-group { margin-bottom: 20px; }
 
         .skill-group h4 {
             color: var(--accent-color);
@@ -321,9 +287,7 @@
             border-bottom: 1px solid #e9ecef;
             padding-bottom: 4px;
         }
-        [data-theme="dark"] .skill-group h4 {
-            border-color: #1f2434;
-        }
+        [data-theme="dark"] .skill-group h4 { border-color: #1f2434; }
 
         .skill-list li {
             position: relative;
@@ -331,7 +295,6 @@
             margin-bottom: 7px;
             font-size: 0.94rem;
         }
-
         .skill-list li::before {
             content: '•';
             color: var(--accent-color);
@@ -347,13 +310,9 @@
             margin-bottom: 26px;
             border-left: 3px solid #e9ecef;
         }
-        [data-theme="dark"] .timeline-item {
-            border-left-color: #23293a;
-        }
+        [data-theme="dark"] .timeline-item { border-left-color: #23293a; }
 
-        .timeline-item:last-child {
-            margin-bottom: 0;
-        }
+        .timeline-item:last-child { margin-bottom: 0; }
 
         .timeline-item::before {
             content: '';
@@ -390,16 +349,12 @@
             gap: 4px;
         }
 
-        .job-title {
-            font-size: 1.15rem;
-        }
-
+        .job-title { font-size: 1.15rem; }
         .job-company {
             font-size: 0.98rem;
             color: var(--accent-color);
             font-weight: 500;
         }
-
         .job-date {
             font-size: 0.86rem;
             color: var(--text-secondary);
@@ -408,9 +363,7 @@
             padding: 2px 8px;
             border-radius: 4px;
         }
-        [data-theme="dark"] .job-date {
-            background: #1b2030;
-        }
+        [data-theme="dark"] .job-date { background: #1b2030; }
 
         .job-desc li {
             margin-bottom: 5px;
@@ -418,7 +371,6 @@
             position: relative;
             padding-left: 14px;
         }
-
         .job-desc li::before {
             content: '-';
             position: absolute;
@@ -433,10 +385,7 @@
             gap: 24px;
         }
 
-        .portfolio-item {
-            padding: 0;
-            overflow: hidden;
-        }
+        .portfolio-item { padding: 0; overflow: hidden; }
 
         .portfolio-media {
             width: 100%;
@@ -446,9 +395,7 @@
             align-items: center;
             justify-content: center;
         }
-        [data-theme="dark"] .portfolio-media {
-            background: #141827;
-        }
+        [data-theme="dark"] .portfolio-media { background: #141827; }
 
         .portfolio-media video {
             width: 100%;
@@ -456,16 +403,13 @@
             object-fit: cover;
         }
 
-        .portfolio-body {
-            padding: 16px 20px 18px;
-        }
+        .portfolio-body { padding: 16px 20px 18px; }
 
         .portfolio-title {
             font-size: 1.02rem;
             font-weight: 600;
             margin-bottom: 3px;
         }
-
         .portfolio-role {
             font-size: 0.9rem;
             color: var(--text-secondary);
@@ -486,9 +430,7 @@
             background: rgba(92,107,192,0.08);
             color: var(--accent-color);
         }
-        [data-theme="dark"] .portfolio-tag {
-            background: rgba(142,162,255,0.12);
-        }
+        [data-theme="dark"] .portfolio-tag { background: rgba(142,162,255,0.12); }
 
         .portfolio-list {
             font-size: 0.9rem;
@@ -519,9 +461,7 @@
             margin-bottom: 0;
             padding-bottom: 0;
         }
-        [data-theme="dark"] .edu-list li {
-            border-color: #1f2434;
-        }
+        [data-theme="dark"] .edu-list li { border-color: #1f2434; }
 
         .edu-icon {
             width: 40px;
@@ -536,9 +476,7 @@
             font-size: 1.15rem;
             flex-shrink: 0;
         }
-        [data-theme="dark"] .edu-icon {
-            background: #1b2035;
-        }
+        [data-theme="dark"] .edu-icon { background: #1b2035; }
 
         /* CONTACT */
         footer {
@@ -572,9 +510,7 @@
             fill: var(--accent-color);
         }
 
-        .contact-item a:hover {
-            color: var(--accent-color);
-        }
+        .contact-item a:hover { color: var(--accent-color); }
 
         /* REVEAL */
         .reveal {
@@ -589,47 +525,26 @@
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
-            .hero-name {
-                font-size: 2.1rem;
-            }
-
+            .hero-name { font-size: 2.1rem; }
             .nav-inner {
                 border-radius: 0 0 20px 20px;
                 gap: 10px;
                 padding: 8px 10px;
             }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .job-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .container {
-                padding: 0 14px;
-            }
-
-            .card {
-                padding: 20px;
-            }
-
+            .skills-grid { grid-template-columns: 1fr; }
+            .job-header { flex-direction: column; align-items: flex-start; }
+            .container { padding: 0 14px; }
+            .card { padding: 20px; }
             .timeline-item {
                 padding-left: 20px;
                 border-left: 2px solid #e9ecef;
             }
-            [data-theme="dark"] .timeline-item {
-                border-left-color: #23293a;
-            }
-
+            [data-theme="dark"] .timeline-item { border-left-color: #23293a; }
             .timeline-item::before {
                 left: -6px;
                 width: 10px;
                 height: 10px;
             }
-
             .contact-grid {
                 flex-direction: column;
                 align-items: center;
@@ -640,507 +555,539 @@
 </head>
 <body>
 
-    <div class="hero-wrapper">
-        <div class="hero-parallax" id="heroParallax"></div>
+<div class="hero-wrapper">
+    <div class="hero-parallax" id="heroParallax"></div>
 
-        <header class="container reveal">
-            <img loading="lazy" src="https://placehold.co/400x400/eef2ff/5c6bc0?text=Photo" alt="Фото: Морозов Даниил" class="hero-photo" width="160" height="160">
-            <h1 class="hero-name">Морозов Даниил Александрович</h1>
-            <div class="hero-role">Project Manager / Business Analyst</div>
-            <p class="hero-tagline">Управление проектами, организация процессов, аналитика данных в коммерческих и некоммерческих проектах.</p>
-        </header>
+    <header class="container reveal">
+        <img loading="lazy"
+             src="https://placehold.co/400x400/eef2ff/5c6bc0?text=Photo"
+             alt="Фото: Морозов Даниил"
+             class="hero-photo" width="160" height="160">
+        <h1 class="hero-name">Морозов Даниил Александрович</h1>
+        <div class="hero-role">Project Manager / Business Analyst</div>
+        <p class="hero-tagline">
+            Управление проектами, организация процессов и аналитика данных в коммерческих и некоммерческих проектах.
+        </p>
+    </header>
+</div>
+
+<nav class="sticky-nav">
+    <div class="nav-inner reveal">
+        <a href="#about" class="nav-link">Обо мне</a>
+        <a href="#skills" class="nav-link">Навыки</a>
+        <a href="#experience" class="nav-link">Опыт</a>
+        <a href="#portfolio" class="nav-link">Портфолио</a>
+        <a href="#projects" class="nav-link">Проекты</a>
+        <a href="#education" class="nav-link">Образование</a>
+        <a href="#contacts" class="nav-link">Контакты</a>
+
+        <button class="theme-toggle" type="button" id="themeToggle" aria-label="Переключить тему">
+            <span id="themeIcon">🌙</span>
+            <span id="themeLabel">Тёмная</span>
+        </button>
     </div>
+</nav>
 
-    <nav class="sticky-nav">
-        <div class="nav-inner reveal">
-            <a href="#about" class="nav-link">Обо мне</a>
-            <a href="#skills" class="nav-link">Навыки</a>
-            <a href="#experience" class="nav-link">Опыт</a>
-            <a href="#portfolio" class="nav-link">Портфолио</a>
-            <a href="#projects" class="nav-link">Проекты</a>
-            <a href="#education" class="nav-link">Образование</a>
-            <a href="#contacts" class="nav-link">Контакты</a>
+<main class="container">
 
-            <button class="theme-toggle" type="button" id="themeToggle" aria-label="Переключить тему">
-                <span id="themeIcon">🌙</span>
-                <span id="themeLabel">Тёмная</span>
-            </button>
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+        <div class="card">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-text">
+                <p><strong>Project Manager / Business Analyst.</strong> Работаю с задачами, требованиями и
+                    процессами в небольших командах. Умею собирать входящие запросы, планировать этапы, формировать
+                    бэклог, контролировать сроки и обеспечивать прозрачность статусов. Использую элементы Agile
+                    (Scrum/Kanban), итерационный подход и простые метрики.</p>
+                <p>Опыт включает аналитику данных (Power BI, DAX, SQL), организацию операционной работы, улучшение
+                    процессов, выявление узких мест и подготовку решений. Имею базу в веб-разработке
+                    (HTML, CSS, JavaScript, PHP), что помогает быстрее понимать технические ограничения, общаться
+                    с разработчиками и формулировать требования.</p>
+                <p>Рассматриваю роли Project Manager / PM Assistant / Business Analyst с возможностью роста
+                    в сторону Product.</p>
+            </div>
         </div>
-    </nav>
+    </section>
 
-    <main class="container">
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
+        <h2 class="section-title">Навыки</h2>
+        <div class="skills-grid">
 
-        <!-- ABOUT -->
-        <section id="about" class="reveal">
+            <!-- Hard Skills -->
             <div class="card">
-                <h2 class="section-title">Обо мне</h2>
-                <div class="about-text">
-                    <p><strong>Project Manager / Business Analyst.</strong> Работаю с задачами, требованиями и процессами в небольших командах. Умею собирать входящие запросы, планировать этапы, формировать бэклог, контролировать сроки и обеспечивать прозрачность статусов. Использую элементы Agile (Scrum/Kanban), итерационный подход и простые метрики.</p>
-                    <p>Опыт включает аналитику данных (Power BI, DAX, SQL), организацию операционной работы, улучшение процессов, выявление узких мест и подготовку решений. Имею базу в веб-разработке (HTML, CSS, JavaScript, PHP), что помогает быстрее понимать технические ограничения, общаться с разработчиками и формулировать требования.</p>
-                    <p>Рассматриваю роли Project Manager / PM Assistant / Business Analyst с возможностью роста в сторону Product.</p>
-                </div>
-            </div>
-        </section>
+                <h3 style="margin-bottom:14px;text-transform:uppercase;font-size:.95rem;color:#adb5bd;letter-spacing:1px;">
+                    HARD SKILLS
+                </h3>
 
-        <!-- SKILLS -->
-        <section id="skills" class="reveal">
-            <h2 class="section-title">Навыки</h2>
-            <div class="skills-grid">
-
-                <!-- Hard Skills -->
-                <div class="card">
-                    <h3 style="margin-bottom: 14px; text-transform: uppercase; font-size: 0.95rem; color: #adb5bd; letter-spacing: 1px;">Hard skills</h3>
-
-                    <div class="skill-group">
-                        <h4>Управление проектами</h4>
-                        <ul class="skill-list">
-                            <li>Постановка и декомпозиция задач (roadmap, спринты, чек-листы).</li>
-                            <li>Формирование и ведение бэклога задач.</li>
-                            <li>Планирование сроков и контроль исполнения.</li>
-                            <li>Подготовка и актуализация проектной документации.</li>
-                            <li>Управление изменениями и рисками на проекте.</li>
-                            <li>Регулярные статус-отчёты для заказчика и команды.</li>
-                            <li>Базовое понимание Agile-подходов (Scrum, Kanban): спринты, планирование, ежедневные созвоны, ретроспективы.</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4>Работа с требованиями</h4>
-                        <ul class="skill-list">
-                            <li>Сбор и уточнение требований у заказчиков и стейкхолдеров.</li>
-                            <li>Формализация требований (описания, схемы, user stories).</li>
-                            <li>Описание бизнес-процессов (AS-IS / TO-BE).</li>
-                            <li>Подготовка технических заданий для команды разработки и аналитиков.</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4>Аналитика и данные</h4>
-                        <ul class="skill-list">
-                            <li>Анализ показателей проекта, выручки, затрат и маржинальности.</li>
-                            <li>Подготовка управленческой отчётности и кратких сводок.</li>
-                            <li>Power BI: модели данных, меры DAX, визуализации.</li>
-                            <li>Power Query: загрузка и преобразование данных.</li>
-                            <li>SQL (базовый уровень: выборки, фильтрация, агрегаты).</li>
-                            <li>Google Sheets, Excel, Airtable для учёта и отчётности.</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4>Инструменты</h4>
-                        <ul class="skill-list">
-                            <li>Таск-трекеры: Trello / Notion / ClickUp.</li>
-                            <li>1С (данные), Google Workspace.</li>
-                            <li>Базовые навыки веб-разработки: HTML, CSS, JavaScript, PHP.</li>
-                            <li>Простые Telegram-боты для записи и оповещений.</li>
-                        </ul>
-                    </div>
+                <div class="skill-group">
+                    <h4>Управление проектами</h4>
+                    <ul class="skill-list">
+                        <li>Постановка и декомпозиция задач (roadmap, спринты, чек-листы).</li>
+                        <li>Планирование сроков и контроль исполнения.</li>
+                        <li>Ведение бэклога и статусов задач в таск-трекерах.</li>
+                        <li>Подготовка и актуализация проектной документации.</li>
+                        <li>Управление изменениями и рисками на проекте.</li>
+                        <li>Регулярные статус-отчёты для заказчика и команды.</li>
+                        <li>Использование элементов Agile (Scrum, Kanban): спринты, планирование, ежедневные созвоны, ретроспективы.</li>
+                    </ul>
                 </div>
 
-                <!-- Soft Skills -->
-                <div class="card">
-                    <h3 style="margin-bottom: 14px; text-transform: uppercase; font-size: 0.95rem; color: #adb5bd; letter-spacing: 1px;">Soft skills</h3>
-
-                    <div class="skill-group">
-                        <h4>Коммуникация</h4>
-                        <ul class="skill-list">
-                            <li>Спокойная и структурированная коммуникация.</li>
-                            <li>Умение договариваться и фиксировать договорённости письменно.</li>
-                            <li>Проведение рабочих встреч, созвонов и планёрок.</li>
-                            <li>Работа с разными типами людей и конфликтными ситуациями.</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4>Подход к работе</h4>
-                        <ul class="skill-list">
-                            <li>Структурность, внимание к деталям и аккуратность в цифрах.</li>
-                            <li>Готовность работать с неопределённостью и гипотезами.</li>
-                            <li>Ответственность за результат и соблюдение сроков.</li>
-                            <li>Пошаговое улучшение процессов вместо «одного большого рывка».</li>
-                        </ul>
-                    </div>
+                <div class="skill-group">
+                    <h4>Работа с требованиями</h4>
+                    <ul class="skill-list">
+                        <li>Сбор и уточнение требований у заказчиков и стейкхолдеров.</li>
+                        <li>Формализация требований (описания, схемы, user stories).</li>
+                        <li>Описание бизнес-процессов (AS-IS / TO-BE).</li>
+                        <li>Подготовка технических заданий для команды разработки и аналитиков.</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
 
-        <!-- EXPERIENCE -->
-        <section id="experience" class="reveal">
-            <h2 class="section-title">Опыт работы</h2>
+                <div class="skill-group">
+                    <h4>Методологии</h4>
+                    <ul class="skill-list">
+                        <li>Agile-подходы для небольших команд.</li>
+                        <li>Scrum (база): спринты, planning, review, ретроспектива.</li>
+                        <li>Kanban: визуализация потока задач и ограничение WIP.</li>
+                    </ul>
+                </div>
 
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">Благотворительный фонд «Зелёный Остров»</div>
-                            <div class="job-company">Project Manager / координатор проектов</div>
-                        </div>
-                        <div class="job-date">2024 – н.в., Ростов-на-Дону</div>
-                    </div>
-                    <ul class="job-desc">
-                        <li>Планирую благотворительные мероприятия и внутренние активности фонда.</li>
-                        <li>Разбиваю работу на задачи и распределяю ответственность между участниками.</li>
-                        <li>Организую регулярные встречи, фиксирую решения и договорённости.</li>
-                        <li>Веду отчётность по мероприятиям и результатам для команды и руководства.</li>
-                        <li>Координирую работу волонтёров и выстраиваю устойчивые процессы.</li>
-                        <li>Использую элементы Kanban: визуализация задач, статус «в работе / сделано».</li>
+                <div class="skill-group">
+                    <h4>Аналитика и данные</h4>
+                    <ul class="skill-list">
+                        <li>Анализ показателей проекта, выручки, затрат и маржинальности.</li>
+                        <li>Подготовка управленческой отчётности и компактных сводок.</li>
+                        <li>Power BI: модели данных, меры DAX, визуализации.</li>
+                        <li>Power Query: загрузка и преобразование данных.</li>
+                        <li>SQL (базовый уровень: выборки, фильтрация, агрегаты).</li>
+                        <li>Google Sheets, Excel, Airtable для учёта и отчётности.</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Инструменты</h4>
+                    <ul class="skill-list">
+                        <li>Таск-трекеры: Trello / Notion / ClickUp.</li>
+                        <li>1С (источники данных), Google Workspace.</li>
+                        <li>Базовые навыки веб-разработки: HTML, CSS, JavaScript, PHP.</li>
+                        <li>Простые Telegram-боты для записи и уведомлений.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">Студия «Пространство Йоги»</div>
-                            <div class="job-company">Project Manager / аналитика процессов</div>
-                        </div>
-                        <div class="job-date">2023 – н.в., Ростов-на-Дону</div>
-                    </div>
-                    <ul class="job-desc">
-                        <li>Организую работу студии и расписание занятий.</li>
-                        <li>Координирую взаимодействие менеджера и преподавателей.</li>
-                        <li>Запустил Telegram-бота для записи на занятия и уведомлений клиентов.</li>
-                        <li>Анализирую посещаемость, загрузку групп и базовые финансовые показатели.</li>
-                        <li>Меняю расписание и процессы на основе данных и обратной связи.</li>
-                        <li>Планирую работу циклами (2–4 недели): цели, задачи, разбор результатов.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">«Уроки Медитации.рф» — региональное представительство</div>
-                            <div class="job-company">Координатор / Project Manager (Ростов-на-Дону)</div>
-                        </div>
-                        <div class="job-date">2023 – н.в., Ростов-на-Дону</div>
-                    </div>
-                    <ul class="job-desc">
-                        <li>Развиваю и представляю проект «Уроки Медитации.рф» в регионе.</li>
-                        <li>Планирую и организую открытые занятия, лекции и практики по медитации.</li>
-                        <li>Координирую взаимодействие с участниками, студиями и площадками.</li>
-                        <li>Веду расписание, запись участников и простую аналитику посещаемости.</li>
-                        <li>Собираю обратную связь и постепенно улучшаю формат мероприятий.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">ООО «ПСП Проект»</div>
-                            <div class="job-company">Маркетинговый аналитик с задачами PM</div>
-                        </div>
-                        <div class="job-date">2024 – 2025 (6 месяцев)</div>
-                    </div>
-                    <ul class="job-desc">
-                        <li>Проанализировал базу клиентов и текущие проекты компании.</li>
-                        <li>Выявил основной прибыльный сегмент — малый и средний бизнес.</li>
-                        <li>Нашёл около 4,5 млн ₽ неучтённых и избыточных расходов за 6 месяцев.</li>
-                        <li>Подготовил предложения по фокусу на ключевых сегментах и перераспределению усилий.</li>
-                        <li>Участвовал в формировании небольшой команды для развития направления.</li>
-                        <li>Настроил регулярную отчётность и набор показателей для руководства.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">ПРО ИТ — аналитическое агентство</div>
-                            <div class="job-company">Бизнес-аналитик / BI</div>
-                        </div>
-                        <div class="job-date">2023 – 2024</div>
-                    </div>
-                    <ul class="job-desc">
-                        <li>Общался с заказчиками, собирал и уточнял требования к отчётности.</li>
-                        <li>Проектировал и создавал дашборды в Power BI.</li>
-                        <li>Подключал данные из 1С и других источников, очищал и структурировал их.</li>
-                        <li>Рассчитывал показатели по продажам, выручке, марже и расходам.</li>
-                        <li>Готовил понятные презентации результатов для руководителей бизнеса.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">Фриланс — веб-проекты</div>
-                            <div class="job-company">Разработка сайтов и сопровождение</div>
-                        </div>
-                        <div class="job-date">2019 – 2023</div>
-                    </div>
-                    <ul class="job-desc">
-                        <li>Обсуждал задачи с заказчиками, фиксировал требования по сайту.</li>
-                        <li>Создавал небольшие сайты на HTML, CSS, JavaScript, PHP.</li>
-                        <li>Вёл проект от запроса до публикации: структура, контент, базовый дизайн.</li>
-                        <li>Занимался копирайтингом и наполнением страниц.</li>
-                    </ul>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- PORTFOLIO -->
-        <section id="portfolio" class="reveal">
-            <h2 class="section-title">Портфолио</h2>
-
-            <div class="portfolio-grid">
-
-                <article class="card portfolio-item">
-                    <div class="portfolio-media">
-                        <video preload="none" autoplay muted loop playsinline>
-                            <source src="portfolio-psp.mp4" type="video/mp4">
-                            Ваш браузер не поддерживает видео.
-                        </video>
-                    </div>
-                    <div class="portfolio-body">
-                        <div class="portfolio-title">Проектная компания «ПСП Проект»</div>
-                        <div class="portfolio-role">Маркетинговый аналитик / PM-направления</div>
-
-                        <div class="portfolio-meta">
-                            <span class="portfolio-tag">B2B</span>
-                            <span class="portfolio-tag">Аналитика выручки</span>
-                            <span class="portfolio-tag">Unit-экономика</span>
-                        </div>
-
-                        <ul class="portfolio-list">
-                            <li>Разобрал базу клиентов и выделил ключевой сегмент — малый и средний бизнес.</li>
-                            <li>Нашёл ~4,5 млн ₽ неучтённых расходов за полгода.</li>
-                            <li>Сформировал гипотезы по фокусу на прибыльных нишах и изменению стратегии.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="card portfolio-item">
-                    <div class="portfolio-media">
-                        <video preload="none" autoplay muted loop playsinline>
-                            <source src="portfolio-space.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="portfolio-body">
-                        <div class="portfolio-title">Студия «Пространство Йоги»</div>
-                        <div class="portfolio-role">Project Manager / бизнес-аналитик</div>
-
-                        <div class="portfolio-meta">
-                            <span class="portfolio-tag">Сервис</span>
-                            <span class="portfolio-tag">Telegram-бот</span>
-                            <span class="portfolio-tag">Оптимизация расписания</span>
-                        </div>
-
-                        <ul class="portfolio-list">
-                            <li>Запустил систему записи через Telegram-бота.</li>
-                            <li>Собрал и проанализировал данные по посещаемости и загрузке групп.</li>
-                            <li>Помог выровнять расписание и повысить заполняемость утренних классов.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="card portfolio-item">
-                    <div class="portfolio-media">
-                        <video preload="none" autoplay muted loop playsinline>
-                            <source src="portfolio-green-island.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="portfolio-body">
-                        <div class="portfolio-title">Благотворительный фонд «Зелёный Остров»</div>
-                        <div class="portfolio-role">Координатор / Project Manager</div>
-
-                        <div class="portfolio-meta">
-                            <span class="portfolio-tag">НКО</span>
-                            <span class="portfolio-tag">Организация процессов</span>
-                            <span class="portfolio-tag">Команда волонтёров</span>
-                        </div>
-
-                        <ul class="portfolio-list">
-                            <li>Выстроил регулярные планёрки и бэклог задач.</li>
-                            <li>Разделил ответственность между волонтёрами по направлениям.</li>
-                            <li>Ввёл простую отчётность по мероприятиям и результатам.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="card portfolio-item">
-                    <div class="portfolio-media">
-                        <video preload="none" autoplay muted loop playsinline>
-                            <source src="portfolio-bi.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="portfolio-body">
-                        <div class="portfolio-title">BI-отчётность для малого бизнеса</div>
-                        <div class="portfolio-role">BI-аналитик / PM внедрения</div>
-
-                        <div class="portfolio-meta">
-                            <span class="portfolio-tag">Power BI</span>
-                            <span class="portfolio-tag">Продажи</span>
-                            <span class="portfolio-tag">Финансы</span>
-                        </div>
-
-                        <ul class="portfolio-list">
-                            <li>Собрал витрину данных из 1С и Excel.</li>
-                            <li>Построил дашборды по выручке, марже и расходам.</li>
-                            <li>Помог владельцу увидеть убыточные направления и пересобрать ассортимент.</li>
-                        </ul>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <!-- PROJECTS -->
-        <section id="projects" class="reveal">
-            <h2 class="section-title">Дополнительные проекты</h2>
+            <!-- Soft Skills -->
             <div class="card">
-                <h3>Проект «Системная Йога»</h3>
-                <div style="font-style: italic; margin-bottom: 8px; color: var(--text-secondary);">Роль: инициатор и координатор</div>
+                <h3 style="margin-bottom:14px;text-transform:uppercase;font-size:.95rem;color:#adb5bd;letter-spacing:1px;">
+                    SOFT SKILLS
+                </h3>
+
+                <div class="skill-group">
+                    <h4>Коммуникация</h4>
+                    <ul class="skill-list">
+                        <li>Спокойная и структурированная коммуникация.</li>
+                        <li>Умение договариваться и фиксировать договорённости письменно.</li>
+                        <li>Проведение рабочих встреч, созвонов и планёрок.</li>
+                        <li>Работа с разными типами людей и сложными ситуациями.</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Подход к работе</h4>
+                    <ul class="skill-list">
+                        <li>Структурность, внимание к деталям и аккуратность в цифрах.</li>
+                        <li>Готовность работать с неопределённостью и гипотезами.</li>
+                        <li>Ответственность за результат и соблюдение сроков.</li>
+                        <li>Пошаговое улучшение процессов вместо одного «большого рывка».</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="reveal">
+        <h2 class="section-title">Опыт работы</h2>
+
+        <div class="timeline-item">
+            <div class="timeline-card">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Благотворительный фонд «Зелёный Остров»</div>
+                        <div class="job-company">Project Manager / координатор проектов</div>
+                    </div>
+                    <div class="job-date">2024 – наст. время, Ростов-на-Дону</div>
+                </div>
                 <ul class="job-desc">
-                    <li>Спроектировал структуру проекта: формат, целевая аудитория, расписание.</li>
-                    <li>Разработал курс по эмоциональной стабильности (модули, задания, формат занятий).</li>
-                    <li>Организую набор участников, коммуникацию и сопровождение на протяжении курса.</li>
-                    <li>Собираю обратную связь и постепенно улучшаю программу и материалы.</li>
+                    <li>Планирую благотворительные мероприятия и внутренние активности фонда.</li>
+                    <li>Разбиваю работу на задачи и распределяю ответственность между участниками.</li>
+                    <li>Организую регулярные встречи, фиксирую решения и договорённости.</li>
+                    <li>Веду отчётность по мероприятиям и результатам для команды и руководства.</li>
+                    <li>Координирую работу волонтёров и выстраиваю устойчивые процессы.</li>
+                    <li>Использую подход Kanban: визуализация задач и статусов «в работе / сделано».</li>
                 </ul>
-            </div>
-        </section>
-
-        <!-- EDUCATION -->
-        <section id="education" class="reveal">
-            <h2 class="section-title">Образование и курсы</h2>
-            <div class="card">
-                <ul class="edu-list">
-                    <li>
-                        <div class="edu-icon">📊</div>
-                        <div>
-                            <strong>SkillFactory</strong><br>
-                            <span style="color: var(--text-secondary); font-size: 0.9em;">Курс «Аналитик данных»: SQL, Power BI, Python (основы), статистика, продуктовые метрики.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="edu-icon">📈</div>
-                        <div>
-                            <strong>LABA</strong><br>
-                            <span style="color: var(--text-secondary); font-size: 0.9em;">Курс по юнит-экономике и корпоративным финансам: CAC, LTV, маржинальность, точка безубыточности.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="edu-icon">💻</div>
-                        <div>
-                            <strong>Power BI & Web Development</strong><br>
-                            <span style="color: var(--text-secondary); font-size: 0.9em;">Продвинутый Power BI; курсы по веб-разработке (HTML, CSS, JS, PHP).</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="edu-icon">📚</div>
-                        <div>
-                            <strong>Самостоятельное обучение</strong><br>
-                            <span style="color: var(--text-secondary); font-size: 0.9em;">Управление проектами: книги, статьи, менторские сессии, практика в реальных проектах.</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-    </main>
-
-    <footer id="contacts" class="reveal">
-        <div class="container">
-            <div class="contact-grid">
-
-                <div class="contact-item">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M20,4H4C2.895,4,2,4.895,2,6v12c0,1.105,0.895,2,2,2h16c1.105,0,2-0.895,2-2V6C22,4.895,21.105,4,20,4z M20,6v0.511 l-8,6.223L4,6.512V6H20z M4,18V9.044l7.386,5.745C11.566,14.93,11.783,15,12,15s0.434-0.07,0.614-0.211L20,9.044V18H4z"/>
-                    </svg>
-                    <a href="mailto:morozov_daniil_1994@mail.ru">morozov_daniil_1994@mail.ru</a>
-                </div>
-
-                <div class="contact-item">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M20.665,3.717l-17.73,6.837c-1.21,0.486-1.203,1.161-0.222,1.462l4.552,1.42l10.532-6.645 c0.498-0.303,0.953-0.14,0.433,0.322l-8.535,7.714l-0.33,4.489c0.486,0,0.696-0.223,0.975-0.496l2.311-2.24l4.844,3.58 c0.89,0.491,1.531,0.235,1.755-0.827l3.17-14.945C22.741,3.495,21.781,2.997,20.665,3.717z"/>
-                    </svg>
-                    <a href="https://t.me/danavrata_deva" target="_blank" rel="noopener noreferrer">@danavrata_deva</a>
-                </div>
-
-                <div class="contact-item">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12,2C8.134,2,5,5.134,5,9c0,5.25,7,13,7,13s7-7.75,7-13C19,5.134,15.866,2,12,2z M12,11.5c-1.381,0-2.5-1.119-2.5-2.5 s1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5S13.381,11.5,12,11.5z"/>
-                    </svg>
-                    <span>Ростов-на-Дону</span>
-                </div>
-
             </div>
         </div>
-    </footer>
 
-    <script>
-        // Тема (light/dark) + localStorage
-        (function () {
-            const root = document.documentElement;
-            const toggle = document.getElementById('themeToggle');
-            const icon = document.getElementById('themeIcon');
-            const label = document.getElementById('themeLabel');
+        <div class="timeline-item">
+            <div class="timeline-card">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Студия «Пространство Йоги»</div>
+                        <div class="job-company">Project Manager / аналитика процессов</div>
+                    </div>
+                    <div class="job-date">2023 – наст. время, Ростов-на-Дону</div>
+                </div>
+                <ul class="job-desc">
+                    <li>Организую работу студии и расписание занятий.</li>
+                    <li>Координирую взаимодействие менеджера и преподавателей.</li>
+                    <li>Запустил Telegram-бота для записи на занятия и уведомлений клиентов.</li>
+                    <li>Анализирую посещаемость, загрузку групп и базовые финансовые показатели.</li>
+                    <li>Меняю расписание и процессы на основе данных и обратной связи.</li>
+                    <li>Планирую работу циклами 2–4 недели: цели, задачи, разбор результатов.</li>
+                </ul>
+            </div>
+        </div>
 
-            const saved = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const initial = saved || (prefersDark ? 'dark' : 'light');
-            root.setAttribute('data-theme', initial);
-            updateButton(initial);
+        <div class="timeline-item">
+            <div class="timeline-card">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">«Уроки Медитации.рф» — региональное представительство</div>
+                        <div class="job-company">Координатор / Project Manager (Ростов-на-Дону)</div>
+                    </div>
+                    <div class="job-date">2023 – наст. время</div>
+                </div>
+                <ul class="job-desc">
+                    <li>Развиваю и представляю проект «Уроки Медитации.рф» в регионе.</li>
+                    <li>Планирую и организую открытые занятия, лекции и практики по медитации.</li>
+                    <li>Координирую взаимодействие с участниками, студиями и площадками.</li>
+                    <li>Веду расписание, запись участников и простую аналитику посещаемости.</li>
+                    <li>Собираю обратную связь и постепенно улучшаю формат мероприятий.</li>
+                </ul>
+            </div>
+        </div>
 
-            toggle.addEventListener('click', () => {
-                const current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-                const next = current === 'dark' ? 'light' : 'dark';
-                root.setAttribute('data-theme', next);
-                localStorage.setItem('theme', next);
-                updateButton(next);
-            });
+        <div class="timeline-item">
+            <div class="timeline-card">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">ООО «ПСП Проект»</div>
+                        <div class="job-company">Маркетинговый аналитик с задачами PM</div>
+                    </div>
+                    <div class="job-date">2024 – 2025 (6 месяцев)</div>
+                </div>
+                <ul class="job-desc">
+                    <li>Проанализировал базу клиентов и текущие проекты компании.</li>
+                    <li>Выявил основной прибыльный сегмент — малый и средний бизнес.</li>
+                    <li>Нашёл около 4,5 млн ₽ неучтённых и избыточных расходов за 6 месяцев.</li>
+                    <li>Подготовил предложения по фокусу на ключевых сегментах и перераспределению усилий.</li>
+                    <li>Участвовал в формировании небольшой команды для развития направления.</li>
+                    <li>Настроил регулярную отчётность и набор показателей для руководства.</li>
+                </ul>
+            </div>
+        </div>
 
-            function updateButton(theme) {
-                if (theme === 'dark') {
-                    icon.textContent = '☀️';
-                    label.textContent = 'Светлая';
-                } else {
-                    icon.textContent = '🌙';
-                    label.textContent = 'Тёмная';
+        <div class="timeline-item">
+            <div class="timeline-card">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">ПРО ИТ — аналитическое агентство</div>
+                        <div class="job-company">Бизнес-аналитик / BI</div>
+                    </div>
+                    <div class="job-date">2023 – 2024</div>
+                </div>
+                <ul class="job-desc">
+                    <li>Общался с заказчиками, собирал и уточнял требования к отчётности.</li>
+                    <li>Проектировал и создавал дашборды в Power BI.</li>
+                    <li>Подключал данные из 1С и других источников, очищал и структурировал их.</li>
+                    <li>Рассчитывал показатели по продажам, выручке, марже и расходам.</li>
+                    <li>Готовил понятные презентации результатов для руководителей бизнеса.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-card">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Фриланс — веб-проекты</div>
+                        <div class="job-company">Разработка сайтов и сопровождение</div>
+                    </div>
+                    <div class="job-date">2019 – 2023</div>
+                </div>
+                <ul class="job-desc">
+                    <li>Обсуждал задачи с заказчиками, фиксировал требования по сайту.</li>
+                    <li>Создавал небольшие сайты на HTML, CSS, JavaScript, PHP.</li>
+                    <li>Вёл проект от запроса до публикации: структура, контент, базовый дизайн.</li>
+                    <li>Занимался копирайтингом и наполнением страниц.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="reveal">
+        <h2 class="section-title">Портфолио</h2>
+
+        <div class="portfolio-grid">
+
+            <article class="card portfolio-item">
+                <div class="portfolio-media">
+                    <video preload="none" autoplay muted loop playsinline>
+                        <source src="portfolio-psp.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+                <div class="portfolio-body">
+                    <div class="portfolio-title">Проектная компания «ПСП Проект»</div>
+                    <div class="portfolio-role">Маркетинговый аналитик / PM-направления</div>
+
+                    <div class="portfolio-meta">
+                        <span class="portfolio-tag">B2B</span>
+                        <span class="portfolio-tag">Аналитика выручки</span>
+                        <span class="portfolio-tag">Unit-экономика</span>
+                    </div>
+
+                    <ul class="portfolio-list">
+                        <li>Разобрал базу клиентов и выделил ключевой сегмент — малый и средний бизнес.</li>
+                        <li>Нашёл ~4,5 млн ₽ неучтённых расходов за полгода.</li>
+                        <li>Сформировал гипотезы по фокусу на прибыльных нишах и изменению стратегии.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card portfolio-item">
+                <div class="portfolio-media">
+                    <video preload="none" autoplay muted loop playsinline>
+                        <source src="portfolio-space.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="portfolio-body">
+                    <div class="portfolio-title">Студия «Пространство Йоги»</div>
+                    <div class="portfolio-role">Project Manager / бизнес-аналитик</div>
+
+                    <div class="portfolio-meta">
+                        <span class="portfolio-tag">Сервис</span>
+                        <span class="portfolio-tag">Telegram-бот</span>
+                        <span class="portfolio-tag">Оптимизация расписания</span>
+                    </div>
+
+                    <ul class="portfolio-list">
+                        <li>Запустил систему записи через Telegram-бота.</li>
+                        <li>Собрал и проанализировал данные по посещаемости и загрузке групп.</li>
+                        <li>Помог выровнять расписание и повысить заполняемость утренних классов.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card portfolio-item">
+                <div class="portfolio-media">
+                    <video preload="none" autoplay muted loop playsinline>
+                        <source src="portfolio-green-island.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="portfolio-body">
+                    <div class="portfolio-title">Благотворительный фонд «Зелёный Остров»</div>
+                    <div class="portfolio-role">Координатор / Project Manager</div>
+
+                    <div class="portfolio-meta">
+                        <span class="portfolio-tag">НКО</span>
+                        <span class="portfolio-tag">Организация процессов</span>
+                        <span class="portfolio-tag">Команда волонтёров</span>
+                    </div>
+
+                    <ul class="portfolio-list">
+                        <li>Выстроил регулярные планёрки и бэклог задач.</li>
+                        <li>Разделил ответственность между волонтёрами по направлениям.</li>
+                        <li>Ввёл простую отчётность по мероприятиям и результатам.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card portfolio-item">
+                <div class="portfolio-media">
+                    <video preload="none" autoplay muted loop playsinline>
+                        <source src="portfolio-bi.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="portfolio-body">
+                    <div class="portfolio-title">BI-отчётность для малого бизнеса</div>
+                    <div class="portfolio-role">BI-аналитик / PM внедрения</div>
+
+                    <div class="portfolio-meta">
+                        <span class="portfolio-tag">Power BI</span>
+                        <span class="portfolio-tag">Продажи</span>
+                        <span class="portfolio-tag">Финансы</span>
+                    </div>
+
+                    <ul class="portfolio-list">
+                        <li>Собрал витрину данных из 1С и Excel.</li>
+                        <li>Построил дашборды по выручке, марже и расходам.</li>
+                        <li>Помог владельцу увидеть убыточные направления и пересобрать ассортимент.</li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+        <h2 class="section-title">Дополнительные проекты</h2>
+        <div class="card">
+            <h3>Проект «Системная Йога»</h3>
+            <div style="font-style:italic;margin-bottom:8px;color:var(--text-secondary);">
+                Роль: инициатор и координатор
+            </div>
+            <ul class="job-desc">
+                <li>Спроектировал структуру проекта: формат, целевая аудитория, расписание.</li>
+                <li>Разработал курс по эмоциональной стабильности (модули, задания, формат занятий).</li>
+                <li>Организую набор участников, коммуникацию и сопровождение на протяжении курса.</li>
+                <li>Собираю обратную связь и постепенно улучшаю программу и материалы.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="reveal">
+        <h2 class="section-title">Образование и курсы</h2>
+        <div class="card">
+            <ul class="edu-list">
+                <li>
+                    <div class="edu-icon">📊</div>
+                    <div>
+                        <strong>SkillFactory</strong><br>
+                        <span style="color:var(--text-secondary);font-size:.9em;">
+                            Курс «Аналитик данных»: SQL, Power BI, основы Python, статистика, продуктовые метрики.
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="edu-icon">📈</div>
+                    <div>
+                        <strong>LABA</strong><br>
+                        <span style="color:var(--text-secondary);font-size:.9em;">
+                            Курс по юнит-экономике и корпоративным финансам: CAC, LTV, маржинальность, точка безубыточности.
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="edu-icon">💻</div>
+                    <div>
+                        <strong>Power BI & Web Development</strong><br>
+                        <span style="color:var(--text-secondary);font-size:.9em;">
+                            Продвинутый Power BI; курсы по веб-разработке (HTML, CSS, JS, PHP).
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="edu-icon">📚</div>
+                    <div>
+                        <strong>Самостоятельное обучение</strong><br>
+                        <span style="color:var(--text-secondary);font-size:.9em;">
+                            Управление проектами: книги, статьи, практика на реальных проектах и консультации с менторами.
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+
+<footer id="contacts" class="reveal">
+    <div class="container">
+        <div class="contact-grid">
+
+            <div class="contact-item">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20,4H4C2.895,4,2,4.895,2,6v12c0,1.105,0.895,2,2,2h16c1.105,0,2-0.895,2-2V6C22,4.895,21.105,4,20,4z M20,6v0.511 l-8,6.223L4,6.512V6H20z M4,18V9.044l7.386,5.745C11.566,14.93,11.783,15,12,15s0.434-0.07,0.614-0.211L20,9.044V18H4z"/>
+                </svg>
+                <a href="mailto:morozov_daniil_1994@mail.ru">morozov_daniil_1994@mail.ru</a>
+            </div>
+
+            <div class="contact-item">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20.665,3.717l-17.73,6.837c-1.21,0.486-1.203,1.161-0.222,1.462l4.552,1.42l10.532-6.645 c0.498-0.303,0.953-0.14,0.433,0.322l-8.535,7.714l-0.33,4.489c0.486,0,0.696-0.223,0.975-0.496l2.311-2.24l4.844,3.58 c0.89,0.491,1.531,0.235,1.755-0.827l3.17-14.945C22.741,3.495,21.781,2.997,20.665,3.717z"/>
+                </svg>
+                <a href="https://t.me/danavrata_deva" target="_blank" rel="noopener noreferrer">@danavrata_deva</a>
+            </div>
+
+            <div class="contact-item">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12,2C8.134,2,5,5.134,5,9c0,5.25,7,13,7,13s7-7.75,7-13C19,5.134,15.866,2,12,2z M12,11.5c-1.381,0-2.5-1.119-2.5-2.5 s1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5S13.381,11.5,12,11.5z"/>
+                </svg>
+                <span>Ростов-на-Дону</span>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Переключение темы + localStorage
+    (function () {
+        const root = document.documentElement;
+        const toggle = document.getElementById('themeToggle');
+        const icon = document.getElementById('themeIcon');
+        const label = document.getElementById('themeLabel');
+
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const initial = saved || (prefersDark ? 'dark' : 'light');
+        root.setAttribute('data-theme', initial);
+        updateButton(initial);
+
+        toggle.addEventListener('click', () => {
+            const current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+            const next = current === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            updateButton(next);
+        });
+
+        function updateButton(theme) {
+            if (theme === 'dark') {
+                icon.textContent = '☀️';
+                label.textContent = 'Светлая';
+            } else {
+                icon.textContent = '🌙';
+                label.textContent = 'Тёмная';
+            }
+        }
+    })();
+
+    // Parallax
+    (function () {
+        const layer = document.getElementById('heroParallax');
+        if (!layer) return;
+
+        window.addEventListener('scroll', () => {
+            const offset = window.scrollY * 0.12;
+            layer.style.transform = 'translateY(' + offset * -1 + 'px)';
+        });
+    })();
+
+    // Reveal-анимация
+    (function () {
+        const elements = document.querySelectorAll('.reveal');
+        if (!('IntersectionObserver' in window)) {
+            elements.forEach(el => el.classList.add('visible'));
+            return;
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
                 }
-            }
-        })();
-
-        // Parallax
-        (function () {
-            const layer = document.getElementById('heroParallax');
-            if (!layer) return;
-
-            window.addEventListener('scroll', () => {
-                const offset = window.scrollY * 0.12;
-                layer.style.transform = 'translateY(' + offset * -1 + 'px)';
             });
-        })();
+        }, { threshold: 0.15 });
 
-        // Reveal-анимация
-        (function () {
-            const elements = document.querySelectorAll('.reveal');
-            if (!('IntersectionObserver' in window)) {
-                elements.forEach(el => el.classList.add('visible'));
-                return;
-            }
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.15
-            });
-
-            elements.forEach(el => observer.observe(el));
-        })();
-    </script>
+        elements.forEach(el => observer.observe(el));
+    })();
+</script>
 
 </body>
 </html>
