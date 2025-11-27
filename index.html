@@ -387,20 +387,24 @@
 
         .portfolio-item { padding: 0; overflow: hidden; }
 
+        /* Видео-карточки */
         .portfolio-media {
             width: 100%;
-            height: 200px;
-            background: #e9ecef;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            aspect-ratio: 16 / 9;       /* <-- дает высоту! */
+            overflow: hidden;
+            border-radius: 16px;
+            background: #0f0f17;        /* fallback */
+            position: relative;
         }
-        [data-theme="dark"] .portfolio-media { background: #141827; }
+        [data-theme="dark"] .portfolio-media {
+            background: #0f0f17;
+        }
 
-        .portfolio-media video {
+        .portfolio-video {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover;           /* растягиваем */
+            display: block;
         }
 
         .portfolio-body { padding: 16px 20px 18px; }
@@ -833,7 +837,7 @@
 
             <article class="card portfolio-item">
                 <div class="portfolio-media">
-                    <video preload="none" autoplay muted loop playsinline>
+                    <video class="portfolio-video" preload="none" autoplay muted loop playsinline>
                         <source src="daobi.mp4" type="video/mp4">
                         Ваш браузер не поддерживает видео.
                     </video>
@@ -858,7 +862,7 @@
 
             <article class="card portfolio-item">
                 <div class="portfolio-media">
-                    <video preload="none" autoplay muted loop playsinline>
+                    <video class="portfolio-video" preload="none" autoplay muted loop playsinline>
                         <source src="at.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -882,7 +886,7 @@
 
             <article class="card portfolio-item">
                 <div class="portfolio-media">
-                    <video preload="none" autoplay muted loop playsinline>
+                    <video class="portfolio-video" preload="none" autoplay muted loop playsinline>
                         <source src="at.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -904,28 +908,30 @@
                 </div>
             </article>
 
+            <!-- Заменённый блок клиники -->
             <article class="card portfolio-item">
-                <div class="portfolio-media">
-                    <video preload="none" autoplay muted loop playsinline>
-                        <source src="klinik.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="portfolio-body">
-                    <div class="portfolio-title">BI-отчётность для малого бизнеса</div>
-                    <div class="portfolio-role">BI-аналитик / PM внедрения</div>
+              <div class="portfolio-media">
+                <video class="portfolio-video" autoplay muted loop playsinline preload="auto">
+                  <source src="klinik.mp4" type="video/mp4">
+                </video>
+              </div>
 
-                    <div class="portfolio-meta">
-                        <span class="portfolio-tag">Power BI</span>
-                        <span class="portfolio-tag">Продажи</span>
-                        <span class="portfolio-tag">Финансы</span>
-                    </div>
+              <div class="portfolio-body">
+                <div class="portfolio-title">BI-отчётность для малого бизнеса</div>
+                <div class="portfolio-role">BI-аналитик / PM внедрения</div>
 
-                    <ul class="portfolio-list">
-                        <li>Собрал витрину данных из 1С и Excel.</li>
-                        <li>Построил дашборды по выручке, марже и расходам.</li>
-                        <li>Помог владельцу увидеть убыточные направления и пересобрать ассортимент.</li>
-                    </ul>
+                <div class="portfolio-meta">
+                  <span class="portfolio-tag">Power BI</span>
+                  <span class="portfolio-tag">Продажи</span>
+                  <span class="portfolio-tag">Финансы</span>
                 </div>
+
+                <ul class="portfolio-list">
+                  <li>Собрал витрину данных из 1С и Excel.</li>
+                  <li>Построил дашборды по выручке, марже и расходам.</li>
+                  <li>Помог владельцу увидеть убыточные направления и пересобрать ассортимент.</li>
+                </ul>
+              </div>
             </article>
 
         </div>
