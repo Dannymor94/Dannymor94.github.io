@@ -218,6 +218,55 @@ header {
     font-size: 0.9rem;
     color: var(--text-secondary);
 }
+/* ==============================
+   HERO CONTACTS
+   ============================== */
+
+.hero-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: inherit;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.contact-link svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--accent-color);
+    opacity: 0.85;
+}
+
+.contact-link:hover {
+    color: var(--accent-color);
+    transform: translateY(-1px);
+}
+
+.contact-separator {
+    opacity: 0.35;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero-contacts {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contact-separator {
+        display: none;
+    }
+}
 
 /* ==============================
    SECTION TITLES
@@ -455,11 +504,48 @@ footer {
         <img src="avatar.png" alt="Фото" class="hero-photo">
         <h1 class="hero-name">ИМЯ ФАМИЛИЯ</h1>
         <div class="hero-role">Project Manager / Business Analyst</div>
-        <p class="hero-tagline">
-            Ростов-на-Дону · +7 999 693-83-53 ·
-            <a href="mailto:morozov_daniil_1994@mail.ru">morozov_daniil_1994@mail.ru</a> ·
-            <a href="https://t.me/danavrata_deva" target="_blank">@danavrata_deva</a>
-        </p>
+        <div class="hero-contacts">
+
+    <a href="https://yandex.ru/maps/?text=Ростов-на-Дону"
+       target="_blank"
+       class="contact-link">
+        <svg viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+        </svg>
+        <span>Ростов-на-Дону</span>
+    </a>
+
+    <span class="contact-separator">•</span>
+
+    <a href="tel:+79996938353" class="contact-link">
+        <svg viewBox="0 0 24 24">
+            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.55.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.55 1 1 0 01-.24 1.01l-2.2 2.23z"/>
+        </svg>
+        <span>+7 999 693-83-53</span>
+    </a>
+
+    <span class="contact-separator">•</span>
+
+    <a href="mailto:morozov_daniil_1994@mail.ru" class="contact-link">
+        <svg viewBox="0 0 24 24">
+            <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        <span>Email</span>
+    </a>
+
+    <span class="contact-separator">•</span>
+
+    <a href="https://t.me/danavrata_deva"
+       target="_blank"
+       class="contact-link">
+        <svg viewBox="0 0 24 24">
+            <path d="M9.04 15.46l-.39 5.52c.56 0 .8-.24 1.09-.53l2.62-2.5 5.44 3.98c1 .55 1.72.26 1.97-.92l3.57-16.77c.33-1.54-.56-2.14-1.52-1.78L1.47 9.33c-1.5.58-1.48 1.41-.27 1.78l5.58 1.74L19.3 5.3c.59-.38 1.13-.17.69.21L9.04 15.46z"/>
+        </svg>
+        <span>@danavrata_deva</span>
+    </a>
+
+</div>
+
     </header>
 </div>
 
